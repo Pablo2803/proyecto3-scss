@@ -1,0 +1,16 @@
+.btn-color {
+  border: 3px solid $color-secondary;
+  background: $color-secondary;
+  color: $color-primary
+}
+
+.btn-color-white {
+  @extend .btn-color;
+  background: $color-primary;
+  color: $color-secondary;
+}
+
+.btn:hover {
+  border: 3px solid $color-secondary;
+  @include size-btn(40px, 120px); 
+}
